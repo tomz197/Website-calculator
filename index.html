@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <title>Really bad calculator</title>
+    <style>
+        body{
+            background-color: rgb(31, 31, 31);
+            color: rgb(240, 240, 240);
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        button{
+            background-color: rgb(255, 187, 0);
+            margin: 10px  5px 2px;
+            border: none;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            font-size: 20px;
+        }
+        button:hover{
+            border-radius: 40%;
+            background-color: rgb(204, 150, 0);
+            transform: scale(1.1);
+            transition: 200ms border-radius ease-in-out,
+                        200ms background-color ease-in-out,
+                        200ms transform ease-in-out;
+        }
+        p input{
+            border: none;
+            border-radius: 10px;
+            padding: 10px;
+            background: rgb(240, 240, 240);
+        }
+    </style>
+    <body>
+        <h1><strong>Bad</strong> Calculator</h1>
+        <button id="plus"><strong>+</strong></button>
+        <button id="minus"><strong>-</strong></button>
+        <button id="del"><strong>/</strong></button>
+        <button id="krat"><strong>x</strong></button>
+        <p>
+            <input id="num1"> + <input id="num2">
+        </p>
+        <p id="summary"></p>
+    </body>
+    <script src="script.js"></script>
+</html>
